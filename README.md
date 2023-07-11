@@ -7,7 +7,6 @@ Para crear una nueva rama y almacenar su progreso en la Etapa-2 de Avanzatech, s
 Cambia el directorio de trabajo actual a la ubicación en donde quieres clonar el directorio.
 
 Clone este repositorio en su máquina local utilizando el siguiente comando:
-bash
 
 `git clone https://github.com/EstebanMa12/ETAPA-2-AVANZATECH.git`
 Navegue al directorio del repositorio clonado:
