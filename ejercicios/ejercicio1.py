@@ -11,3 +11,12 @@ def twice_as_old(dad_years_old, son_years_old):
 #solución 2
 
 twice_as_old = lambda dad_years_old, son_years_old: abs(dad_years_old - (son_years_old * 2))
+
+#solución de problema con modificación de listas, tuplas y organización claves valor
+
+def meeting(s):
+    names = s.upper().split(";")
+    name_tuples = [tuple(name.split(":")) for name in names]
+    sorted_names = sorted(name_tuples, key=lambda name: (name[1], name[0]))
+    result = "".join(f"({name[1]}, {name[0]})" for name in sorted_names)
+    return result
