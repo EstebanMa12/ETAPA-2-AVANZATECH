@@ -15,8 +15,15 @@ matriz = read_csv("./matches.csv")
 
 #ESCOGEMOS LOS MATCHES CON DURACION DE MENOS DE 1900 SEGUNDOS Y QUE SE DIERON EN NA1
 filtrada = filter(lambda x: int(x["duration"])<1000 and x["platformid"]=="NA1",matriz)
-try:
+""" try:
     while True:
         print(next(filtrada))
 except StopIteration as error:
-    pass
+    pass """
+#Solo quiero que me muestro id y duracion
+def funcion(x):
+    c = (f"id = {x['id']}",f"duration = {x['duration']}")
+    return c
+mapeada = map(funcion, filtrada)
+for i in mapeada:
+    print(i)
